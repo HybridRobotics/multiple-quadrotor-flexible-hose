@@ -7,17 +7,8 @@ Multiple quadrotors carrying a flexible hose: dynamics, differential flatness an
 
 ***
 ### simulations
-
-<div style="float: left; width: 50%;">
-    <h5> sim1: Setpoint 2 quadrotors LQR </h5>
-    <img src="./media/sim1.gif" width="300"  />
-</div>
-
-<div style="float: right; width: 50%;">
-    <h5> sim2: Setpoint 3 quadrotors LQR </h5>
-    <img src="./media/sim2.gif" width="300"  />
-</div>
+|  Sim 1.1: Setpoint 2 quadrotors  | Sim 1.2: Setpoint 3 quadrotors  | Sim 2: Trajectory 2 quadrotors |
+|---|---|---|
+|  <img src="./media/sim1.gif" width="300"  /> |  <img src="./media/sim2.gif" width="300"  /> | <img src="./media/sim3.gif" width="300"  /> |
 
 
-##### sim3: Trajectory 2 quadrotors LQR 
-<img src="./media/sim3.gif" width="300"  />
