@@ -13,7 +13,7 @@ Multiple quadrotors carrying a flexible hose: dynamics, differential flatness an
     <img src="./media/sim1.gif" width="300"  />
 </div>
 
-<div style="float: left; width: 50%;">
+<div style="float: right; width: 50%;">
     <h5> sim2: Setpoint 3 quadrotors LQR </h5>
     <img src="./media/sim2.gif" width="300"  />
 </div>
