@@ -1,0 +1,12 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		getUnitvectorsFromTensions14;
+		getUnitvectorsFromTensions14_initialize;
+		getUnitvectorsFromTensions14_terminate;
+		getUnitvectorsFromTensions14_atexit;
+	local:
+		*;
+};

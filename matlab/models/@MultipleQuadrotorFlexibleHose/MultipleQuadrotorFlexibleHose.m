@@ -34,6 +34,7 @@ properties
     mge3
     
     damp_coeff = 0.1 % damping coefficient
+    dynamics_func_type
     
     get_dx@function_handle
     get_dyn_dq_mex@function_handle

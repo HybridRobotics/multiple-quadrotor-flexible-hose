@@ -63,7 +63,7 @@ elseif strcmp(cond, 'single')
 
 elseif strcmp(cond, 'flatness')
 %     ref = obj.flat2state(obj.trajectory(0));
-    ref = obj.get_desired_states(0);
+    ref = obj.get_desired_states(p.Results.t0);
     xInit = ref.xd;
 elseif strcmp(cond, 'perturb-cable')
 %     ref = obj.flat2state(obj.trajectory(0));

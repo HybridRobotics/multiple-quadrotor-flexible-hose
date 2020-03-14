@@ -58,6 +58,7 @@ function parse_inputs(obj,varargin)
     elseif strcmp(p.Results.dynamics, 'mex')
         obj.get_dx = @obj.get_dyn_dq_mex;
     end
+    obj.dynamics_func_type = p.Results.dynamics;
 
     if strcmpi(p.Results.xd, 'flatness')
         obj.get_desired_states = @(t) obj.flat2state(obj.trajectory(t));

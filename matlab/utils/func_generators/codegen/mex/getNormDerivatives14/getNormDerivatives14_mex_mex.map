@@ -1,0 +1,12 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		getNormDerivatives14;
+		getNormDerivatives14_initialize;
+		getNormDerivatives14_terminate;
+		getNormDerivatives14_atexit;
+	local:
+		*;
+};

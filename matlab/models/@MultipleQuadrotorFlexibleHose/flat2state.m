@@ -13,7 +13,7 @@ function [ref]= flat2state(obj, flats)
 %
 % =====================================================================
 %%
-flats_n_states = FlatsnStates(obj.n, obj.I);
+flats_n_states = FlatsnStates(obj.n, obj.I,obj.dynamics_func_type);
 
 dmax = 4+(2*obj.n); % highest required derivative of the position
 % flats.x0 <- flats.x0.x[3,1] (position), flats.x0.dx[3,dmax] (position derivatives)

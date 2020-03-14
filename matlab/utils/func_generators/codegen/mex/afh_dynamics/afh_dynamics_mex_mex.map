@@ -1,0 +1,26 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		afh_dynamics;
+		emxEnsureCapacity_int16_T;
+		emxEnsureCapacity_int32_T;
+		emxEnsureCapacity_ptrdiff_t;
+		emxEnsureCapacity_real_T;
+		emxFreeStruct_struct0_T;
+		emxFree_int16_T;
+		emxFree_int32_T;
+		emxFree_ptrdiff_t;
+		emxFree_real_T;
+		emxInitStruct_struct0_T;
+		emxInit_int16_T;
+		emxInit_int32_T;
+		emxInit_ptrdiff_t;
+		emxInit_real_T;
+		afh_dynamics_initialize;
+		afh_dynamics_terminate;
+		afh_dynamics_atexit;
+	local:
+		*;
+};

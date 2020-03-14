@@ -27,6 +27,6 @@ df = delu(1:obj.nQ)';
 dM = reshape(delu(obj.nQ+1:end),3, obj.nQ);
 
 u = ref.ud + [df; dM];
-% fprintf("t: %.4f\n",t);
+fprintf("t: %.4f\n",t);
 
 end
