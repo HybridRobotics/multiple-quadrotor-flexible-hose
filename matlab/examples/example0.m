@@ -1,10 +1,8 @@
-%% Example 1
+%% Example 0
 % Multiple quadrotors with flexible hose
-% 
+%
 % nQ = 2
-% n = 10
-% I = {1, 11} (note: matlab index starts at 1)
-% 
+% n = 5
 
 %% environment setup
 clear; close all;
@@ -14,7 +12,7 @@ addpath(genpath('../utils'));
 warning('off', 'MATLAB:catenate:DimensionMismatch');
 
 %% script params
-params.dynamics = 'default'; % {'mex', 'default'}
+params.dynamics = 'mex'; % {'mex', 'default'}
 params.computeRecattiGains = true;
 
 params.expName = 'setpoint_n10_nQ2';
@@ -25,7 +23,7 @@ params.doAnimation          = true;
 params.saveVideo            = false;
 
 %% model setup
-n = 10;          % number of links (S2)
+n = 5;          % number of links (S2)
 I = [1];
 I = [I, n+1];   % (n+1 is always part of I: differential flatness)
 
@@ -61,7 +59,7 @@ simtf = tf;
 
 % initial condition
 % -----------------
-INIT_COND = 'perturb-cable'; % {'close', 'flatness', 'perturb-cable'}
+INIT_COND = 'close'; % {'close', 'flatness', 'perturb-cable'}
 xInit = mdl.get_init_cond('condition',INIT_COND,'dist', 0.1, 't0' , 0);
 
 
@@ -100,7 +98,7 @@ mdl.controller = @(t,x) control_lqr(mdl, t, x);
 
 % simulation
 % ----------
-fprintf("simulating control for n=%d\n",n);
+fprintf("\n simulating control for n=%d\n",n);
 tic
 sol = mdl.simulate([t0, simtf], xInit, @ode15s);
 toc
@@ -131,7 +129,7 @@ if params.visualizeFinalState
     mdl.visualizeState(sol.y(end,:)');
 end
 
-
+keyboard;
 % animation
 % ---------
 opts.t = solution.t;
@@ -148,7 +146,6 @@ end
 
 % saving mat
 % ----------
-
 if params.saveMatFile
     % saving whole workspace
     % save(save2file,  '-v7.3'); % this is usually a 1GB+

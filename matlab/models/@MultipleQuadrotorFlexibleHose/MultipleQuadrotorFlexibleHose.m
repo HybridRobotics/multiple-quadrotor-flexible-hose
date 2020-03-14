@@ -204,7 +204,7 @@ methods %(Abstract)
        kx = diag([1,1]); kv = 2*diag([1,1]);
        u = r.d2x - kx*(x(1:2)-r.x)-kv*(x(3:4)-r.dx);
        
-       fprintf("t: %f\n",t);
+%        fprintf("t: %f\n",t);
     end
     
     function[qref] = getRefState(obj,t)

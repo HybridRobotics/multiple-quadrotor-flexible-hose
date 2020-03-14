@@ -22,7 +22,7 @@ x0 = [zeros(3*obj.nQ,1); ones(obj.n,1); x0(:)];
 A = []; b= [];
 Aeq = []; beq = [];
 lb = []; ub = [];
-options = optimoptions('fmincon','Display','iter','Algorithm','sqp', 'StepTolerance', 1e-10, 'ConstraintTolerance', 1e-10);
+options = optimoptions('fmincon','Display','off','Algorithm','sqp', 'StepTolerance', 1e-10, 'ConstraintTolerance', 1e-10);
 nonlcon = @constraints;
 
 [x,~,~,~] = fmincon(@cost_fun,x0,A,b,Aeq,beq,lb,ub,nonlcon,options);

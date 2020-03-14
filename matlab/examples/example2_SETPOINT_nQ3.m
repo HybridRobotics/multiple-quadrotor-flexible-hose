@@ -26,7 +26,7 @@ params.saveVideo            = false;
 
 %% model setup
 n = 10;          % number of links (S2)
-I = [1];
+I = [1, 6];
 I = [I, n+1];   % (n+1 is always part of I: differential flatness)
 
 hose_l = 2;     % total hose length

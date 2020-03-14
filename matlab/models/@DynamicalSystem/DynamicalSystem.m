@@ -56,6 +56,9 @@ methods % dynamics
         options = odeset('RelTol',1e-13,'AbsTol',1e-15);
         odefun = @(t,x)system_dynamics(obj, t, x);
         
+        
+        fprintf("this might take a while...\n");
+        fprintf("take a break and get coffee\n");
         sol = solver(odefun, tspan, x0,options);
         
         [sol.x, sol.y] = even_sample(sol.x, sol.y, 250);

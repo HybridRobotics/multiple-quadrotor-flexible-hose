@@ -1,3 +1,7 @@
 # matlab
 *.m~
 *.asv
+*.mat 
+
+matlab/examples/results
+
