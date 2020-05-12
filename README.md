@@ -12,12 +12,12 @@ The Matlab code has been tested with R2019a version. Example scripts can be foun
 
 2. Run the scripts. 
 
-`example1.m, example2.m` presents example templates to simulate _multiple-quadrotor-flexible-hose_ dynamics along with LQR control on the linearized dynamics. 
+`example1.m, example2.m` present example templates to simulate _multiple-quadrotor-flexible-hose_ dynamics along with LQR control on the linearized dynamics. 
 
 Scripts for the simulations presented in the paper are `sim_1a_SETPOINT_nQ2.m, sim_1b_SETPOINT_nQ3.m,  sim_2_TRAJ_nQ2.m`. 
 
 ### Using MEX files
-Use `matlab/utils/func_generators/generateMexFiles.m` to MEX the dynamics for appropriate system parameters, to reduce simulation time. 
+Use `matlab/utils/func_generators/generateMexFiles.m` to MEX the dynamics for appropriate system parameters (to reduce simulation time). 
 
 
 ## Simulations
