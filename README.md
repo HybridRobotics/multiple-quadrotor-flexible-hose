@@ -19,6 +19,8 @@ Scripts for the simulations presented in the paper are `sim_1a_SETPOINT_nQ2.m, s
 ### Using MEX files
 Use `matlab/utils/func_generators/generateMexFiles.m` to MEX the dynamics for appropriate system parameters (to reduce simulation time). 
 
+- If `Unrecognized function or variable` error arises, see [Geometric Toolbox](https://github.com/HybridRobotics/geometric-toolbox)
+
 
 ## Simulations
 Mat files for simulations presented in the paper. [Link](https://drive.google.com/open?id=1orp8ZG4U23B6Hyn9AXAL7uglj7Fyrver)
