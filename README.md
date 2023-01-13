@@ -31,13 +31,16 @@ Mat files for simulations presented in the paper. [Link](https://drive.google.co
 
 ## Citation
 
-- Kotaru, P., and Sreenath, K., "Multiple quadrotors carrying a flexible hose: dynamics, differential flatness and control." International Federation of Automatic Control World Congress (IFAC), July 2020, to appear.
+- Prasanth Kotaru, and Koushil Sreenath. "Multiple quadrotors carrying a flexible hose: dynamics, differential flatness and control." IFAC-PapersOnLine 53, no. 2 (2020): 8832-8839.
 ```
-@conference{IFAC2020_Kotaru,
-  author={ Prasanth Kotaru and Koushil Sreenath },
-  title={ Multiple quadrotors carrying a flexible hose: dynamics, differential flatness and control },
-  booktitle={ International Federation of Automatic Control World Congress (IFAC) },  
-  month={ July },
-  year={ 2020, to appear },
+@article{kotaru2020multiple,
+  title={Multiple quadrotors carrying a flexible hose: dynamics, differential flatness and control},
+  author={Kotaru, Prasanth and Sreenath, Koushil},
+  journal={IFAC-PapersOnLine},
+  volume={53},
+  number={2},
+  pages={8832--8839},
+  year={2020},
+  publisher={Elsevier}
 }
 ```
